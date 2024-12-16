@@ -1,0 +1,47 @@
+import { parseSwagger } from './@helpers';
+import { generateModels } from './generators/modelGenerator';
+import { generateContracts } from './generators/contractGenerator';
+import { generateRepositories } from './generators/repositoryGenerator';
+import { determineOpenAPIVersion } from './generators/determineOpenAPIVersion';
+import { OpenAPIV2, OpenAPIV3 } from 'openapi-types';
+import {generateServices} from "./generators/serviceGenerator";
+
+async function main() {
+    const swaggerPath = 'swagger-definitions/fixed-swagger.json'; // Swagger dosya yolu
+    const outputDir = 'src'; // Çıktı dizini
+
+    try {
+        // Swagger dosyasını parse et
+        const swaggerData = await parseSwagger(swaggerPath);
+
+        // Versiyon belirle
+        const version = determineOpenAPIVersion(swaggerPath);
+
+        console.log(`Detected OpenAPI version: ${version}`);
+
+        if (version === 'v2') {
+            // OpenAPI v2 için modelleri, kontratları ve repository'leri oluştur
+            const swaggerDataV2 = swaggerData as OpenAPIV2.Document;
+            generateModels(swaggerDataV2.definitions || {}, `${outputDir}/@models`);
+            generateContracts(swaggerDataV2.paths || {}, `${outputDir}/@contracts`,version);
+            generateRepositories(swaggerDataV2.paths || {}, `${outputDir}/@repositories`, version);
+            generateServices(swaggerDataV2.paths || {}, `${outputDir}/@services`, version);
+        } else if (version === 'v3' || version === 'v3.1') {
+            // OpenAPI v3/v3.1 için modelleri, kontratları ve repository'leri oluştur
+            const swaggerDataV3 = swaggerData as OpenAPIV3.Document;
+            generateModels(swaggerDataV3.components?.schemas || {}, `${outputDir}/@models`);
+            generateContracts(swaggerDataV3.paths || {}, `${outputDir}/@contracts`,version);
+            generateRepositories(swaggerDataV3.paths || {}, `${outputDir}/@repositories`,version);
+            generateServices(swaggerDataV3.paths || {}, `${outputDir}/@services`,version);
+
+        } else {
+            throw new Error('Unsupported OpenAPI version. Only v2 and v3 are supported.');
+        }
+
+        console.log('Code generation completed successfully!');
+    } catch (error) {
+        console.error('Error during code generation:', error);
+    }
+}
+
+main();
