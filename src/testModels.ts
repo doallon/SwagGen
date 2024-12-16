@@ -24,7 +24,7 @@ async function processModels() {
     const baseDir = resolveOutputDirFromAlias(rootDir,alias);
     /*const baseDir = "models";*/
 
-    const inputPath = "src/swagger-definitions/sample.json";
+    const inputPath = "https://petstore3.swagger.io/api/v3/openapi.json";
     const swaggerSpec = await loadSwaggerSpec(inputPath);
     const subDir = 'inventory'
     const dynamicSubDir = getSubDir(swaggerSpec, subDir)

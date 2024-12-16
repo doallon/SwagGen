@@ -61,7 +61,7 @@ export async function writeModelToFile(
 
     const modelContent = `
 /**
- * ${schema.description || `Model for ${transformedSchemaName}`}
+ * ${schema.description || `Model for ${schemaName}`}
  */
 export interface ${schemaName} ${extendsList.length ? `extends ${extendsList.join(", ")}` : ""} {
   ${properties.join("\n  ")}
