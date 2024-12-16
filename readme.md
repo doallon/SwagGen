@@ -1,4 +1,5 @@
-# **SwagGen - Dynamic TypeScript Model Generator from OpenAPI Schemas**
+# **SwagGen**
+Dynamic TypeScript Model Generator from OpenAPI Schemas
 
 **SwagGen** is a robust and flexible solution to dynamically generate **TypeScript models** from OpenAPI 3.0 schemas. This tool automates the generation of models, resolves dependencies, and simplifies project management with features like barrel file creation and customizable model naming.
 
