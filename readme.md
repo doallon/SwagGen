@@ -228,9 +228,6 @@ export * from './CategoryList';
 - Filters out unnecessary imports and ensures no duplicates.
 
 ---
-
-
----
 ## Upcoming Features
 We are actively working on additional features to make SwagGen even more powerful:
 
@@ -239,6 +236,7 @@ We are actively working on additional features to make SwagGen even more powerfu
 - **Generate Repositories:** Generate repository patterns for handling API requests.
 - **Generate Services:** Create service files for business logic based on OpenAPI paths.
 - Stay tuned for upcoming releases! 🚀
+
 ---
 
 
