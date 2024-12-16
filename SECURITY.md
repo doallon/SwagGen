@@ -15,7 +15,7 @@ The following versions of SwagGen are currently supported with security updates:
 If you discover a security vulnerability in SwagGen, please report it responsibly.  
 We appreciate your efforts to improve the security of our project.
 
-To report a vulnerability, please send an email to: **security@swaggen.com**.
+To report a vulnerability, please send an email to: **swaggen@doallon.com**.
 
 Please include the following details:
 - A description of the vulnerability
