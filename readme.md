@@ -24,9 +24,21 @@
 3. [Configuration Options](#configuration-options)
 4. [Example Workflow](#example-workflow)
 5. [Advanced Features](#advanced-features)
-6. [Development](#development)
-7. [License](#license)
-8. [Support](#support)
+6. [Upcoming Features](#upcoming-features)
+7. [Development](#development)
+8. [License](#license)
+9. [Support](#support)
+
+---
+
+## Installation
+
+Ensure you have **Node.js** and your preferred package manager installed.
+
+### Install via PNPM (Recommended)
+```bash
+pnpm install
+
 
 ---
 
@@ -51,7 +63,7 @@ yarn install
 
 ---
 
-## 🚀 **Usage**
+## Usage
 
 SwagGen processes OpenAPI schemas and generates TypeScript models. Here is the typical usage workflow:
 
@@ -115,7 +127,7 @@ pnpm ts-node index.ts
 
 ---
 
-## ⚙️ **Configuration Options**
+## Configuration Options
 
 ### ProcessSchemas Options
 
@@ -144,7 +156,7 @@ modelNameTransform: {
 
 ---
 
-## 🛠 **Example Workflow**
+## Example Workflow
 
 **Input OpenAPI Schema**:
 ```json
@@ -196,10 +208,9 @@ export interface SwagCategoryCollectionInterface extends SwagCategoryInterface {
   items: SwagCategoryInterface[];
 }
 ```
-
 ---
 
-## 📦 **Advanced Features**
+## Advanced Features
 
 ### **Barrel File Generation**
 
@@ -218,7 +229,20 @@ export * from './CategoryList';
 
 ---
 
-## 🛠 **Development**
+
+---
+## Upcoming Features
+We are actively working on additional features to make SwagGen even more powerful:
+
+Generate Class Structures: Generate classes instead of interfaces for models.
+Generate Contracts: Automatically create contract interfaces for APIs.
+Generate Repositories: Generate repository patterns for handling API requests.
+Generate Services: Create service files for business logic based on OpenAPI paths.
+Stay tuned for upcoming releases! 🚀
+---
+
+
+## Development
 
 To contribute or extend **SwagGen**:
 
@@ -245,13 +269,13 @@ To contribute or extend **SwagGen**:
 
 ---
 
-## 📜 **License**
+## License
 
 This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## 💬 **Support**
+## Support
 
 If you encounter issues or have any questions:
 - Open an issue on [GitHub](https://github.com/doallon/SwagGen/issues).
