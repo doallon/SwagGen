@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d49bc53-1c3a-49b5-9523-b1ee8b10bdde" name="Changes" comment="readme">
-      <change afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/CONTRIBUTING.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +73,7 @@
       <workItem from="1734341662501" duration="990000" />
       <workItem from="1734342661409" duration="1228000" />
       <workItem from="1734345617110" duration="2022000" />
-      <workItem from="1734348836770" duration="3737000" />
+      <workItem from="1734348836770" duration="3924000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
@@ -148,7 +147,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734351703265</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="readme">
+      <option name="closed" value="true" />
+      <created>1734357110221</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1734357110221</updated>
+    </task>
+    <task id="LOCAL-00011" summary="readme">
+      <option name="closed" value="true" />
+      <created>1734357188877</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1734357188877</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

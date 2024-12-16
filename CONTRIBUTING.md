@@ -1,3 +1,4 @@
+CONTRIBUTING
 
 # Contributing to SwagGen
 
