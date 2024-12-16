@@ -1,5 +1,3 @@
-CONTRIBUTING
-
 # Contributing to SwagGen
 
 Thank you for your interest in contributing to SwagGen! 🎉  
