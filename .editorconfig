@@ -1,0 +1,168 @@
+# Editor configuration, see http://editorconfig.org
+root = true
+
+##############################
+# Global Configuration
+##############################
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+##############################
+# Documentation and Markdown
+##############################
+[*.md]
+# Markdown files often have long lines (e.g., links or tables)
+max_line_length = off
+trim_trailing_whitespace = false
+
+[*.rst]
+# ReStructuredText for Sphinx documentation
+max_line_length = off
+trim_trailing_whitespace = true
+
+##############################
+# YAML and Configuration Files
+##############################
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+
+# PNPM-specific files
+[pnpm-workspace.yaml]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+
+##############################
+# JSON Files
+##############################
+[*.json]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[tsconfig.json]
+# TypeScript config files
+indent_style = space
+indent_size = 2
+
+##############################
+# JavaScript and TypeScript
+##############################
+[*.{js,jsx,ts,tsx}]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+max_line_length = 100
+
+##############################
+# React and Next.js Specific
+##############################
+[*.{tsx,jsx}]
+# JSX/TSX files for React and Next.js
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Next.js configuration files
+[next.config.js]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+
+# Static HTML files for Next.js
+[*.html]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+
+##############################
+# Stylesheets
+##############################
+[*.{css,scss,less}]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+
+# CSS Modules in React projects
+[*.module.scss]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+
+##############################
+# Shell Scripts
+##############################
+[*.sh]
+indent_style = tab
+insert_final_newline = true
+
+##############################
+# Docker
+##############################
+[Dockerfile*]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[docker-compose.yaml]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+
+##############################
+# GraphQL
+##############################
+[*.graphql]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+
+##############################
+# Logs and Generated Files
+##############################
+[*.log]
+insert_final_newline = false
+trim_trailing_whitespace = false
+
+[*.min.js]
+trim_trailing_whitespace = false
+insert_final_newline = false
+
+##############################
+# Test and Storybook Files
+##############################
+[*.{test,spec}.{js,ts,jsx,tsx}]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+
+[*.stories.{js,ts,jsx,tsx}]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+
+##############################
+# Ignore Cache/Build Folders
+##############################
+[build/**]
+insert_final_newline = false
+trim_trailing_whitespace = false
+
+[dist/**]
+insert_final_newline = false
+trim_trailing_whitespace = false
+
+[.next/**]
+insert_final_newline = false
+trim_trailing_whitespace = false
