@@ -5,33 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d49bc53-1c3a-49b5-9523-b1ee8b10bdde" name="Changes" comment="test petstore3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/address/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/address/model/IAddress.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/address/model/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/api/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/api/response/IApiResponse.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/api/response/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/category/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/category/model/ICategory.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/category/model/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/customer/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/customer/model/ICustomer.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/customer/model/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/order/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/order/model/IOrder.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/order/model/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/pet/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/pet/model/IPet.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/pet/model/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/tag/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/tag/model/ITag.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/tag/model/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/user/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/user/model/IUser.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/@models/inventory/user/model/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testModels.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/testModels.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +46,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "pnpm",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "ts.external.directory.path": "D:\\Projects\\SwagGen\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.1.5\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -99,6 +73,7 @@
       <workItem from="1734341662501" duration="990000" />
       <workItem from="1734342661409" duration="1228000" />
       <workItem from="1734345617110" duration="2022000" />
+      <workItem from="1734348836770" duration="1205000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />

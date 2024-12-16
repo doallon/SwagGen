@@ -234,11 +234,11 @@ export * from './CategoryList';
 ## Upcoming Features
 We are actively working on additional features to make SwagGen even more powerful:
 
-Generate Class Structures: Generate classes instead of interfaces for models.
-Generate Contracts: Automatically create contract interfaces for APIs.
-Generate Repositories: Generate repository patterns for handling API requests.
-Generate Services: Create service files for business logic based on OpenAPI paths.
-Stay tuned for upcoming releases! 🚀
+- **Generate Class Structures:** Generate classes instead of interfaces for models.
+- **Generate Contracts:** Automatically create contract interfaces for APIs.
+- **Generate Repositories:** Generate repository patterns for handling API requests.
+- **Generate Services:** Create service files for business logic based on OpenAPI paths.
+- Stay tuned for upcoming releases! 🚀
 ---
 
 
