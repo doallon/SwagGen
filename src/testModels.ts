@@ -68,7 +68,7 @@ async function processModels() {
 
     const modelOptions = {
         defaultCategory: "common",
-        defaultType: "model",
+        defaultFolder: "model",
         modelNameTransform: {
             remove: [""], // Remove "Dto" from the model name
             replace: {}, // Replace "View" with "Details" replace: { "View": "Details" },

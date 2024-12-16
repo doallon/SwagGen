@@ -39,17 +39,6 @@ Ensure you have **Node.js** and your preferred package manager installed.
 ### Install via PNPM (Recommended)
 ```bash
 pnpm install
-
-
----
-
-## 💻 **Installation**
-
-Ensure you have **Node.js** and your preferred package manager installed.
-
-### Install via PNPM (Recommended)
-```bash
-pnpm install
 ```
 
 ### Install via NPM
@@ -132,13 +121,13 @@ pnpm ts-node index.ts
 
 ### ProcessSchemas Options
 
-| Option                | Type                 | Description                                               |
-|-----------------------|----------------------|-----------------------------------------------------------|
-| `defaultCategory`     | `string`             | Default category for models (e.g., "common").             |
-| `defaultType`         | `string`             | Default type for models (e.g., "model").                  |
-| `modelNameTransform`  | `Object`             | Rules for transforming model names.                      |
-| `beforeWrite`         | `Function`           | Callback executed before writing a file.                 |
-| `afterWrite`          | `Function`           | Callback executed after successfully writing a file.     |
+| Option               | Type                 | Description                                          |
+|----------------------|----------------------|------------------------------------------------------|
+| `defaultCategory`    | `string`             | Default category for models (e.g., "common").        |
+| `defaultFolder`      | `string`             | Default folder for models (e.g., "model").           |
+| `modelNameTransform` | `Object`             | Rules for transforming model names.                  |
+| `beforeWrite`        | `Function`           | Callback executed before writing a file.             |
+| `afterWrite`         | `Function`           | Callback executed after successfully writing a file. |
 
 #### **Model Name Transformation**
 
@@ -229,17 +218,119 @@ export * from './CategoryList';
 - Filters out unnecessary imports and ensures no duplicates.
 
 ---
-## Upcoming Features
-We are actively working on additional features to make SwagGen even more powerful:
 
-- **Generate Class Structures:** Generate classes instead of interfaces for models.
-- **Generate Contracts:** Automatically create contract interfaces for APIs.
-- **Generate Repositories:** Generate repository patterns for handling API requests.
-- **Generate Services:** Create service files for business logic based on OpenAPI paths.
-- Stay tuned for upcoming releases! 🚀
+## Upcoming Features
+
+We are actively working on additional features to make **SwagGen** even more powerful and versatile. Here's a sneak peek at what's coming:
+
+### 🔧 Generate Class Structures
+
+#### Purpose
+Generate classes alongside interfaces for models, enabling dynamic processing and seamless front-end integration.
+
+#### How It Works
+Classes will be created based on interfaces and enriched with metadata to support:
+- **Dynamic processing**
+- **Validation**
+- **UI integration**
+
+#### Structure Example
+```typescript
+type: ModelFieldType.STRING,
+defaultValue: '',
+required: true,
+label: 'firstName',
+placeholder: 'enterFirstName'
+```
+
+#### Benefits
+- Dynamically handle model rendering.
+- Simplify form validation.
+- Streamline user interactions on the front end.
 
 ---
 
+### 📜 Generate Contracts
+
+#### Purpose
+Automatically generate contract interfaces for APIs to:
+- **Standardize communication** between front-end and back-end.
+- **Simplify API integration.**
+
+#### Benefits
+- Enforced API contracts.
+- Consistent and reusable data models.
+
+---
+
+### 📦 Generate Repositories
+
+#### Purpose
+Introduce repository patterns for handling API requests and centralize logic.
+
+#### Benefits
+- Improved maintainability of API interactions.
+- Enhanced testability of network operations.
+- Decoupled and modular data access layers.
+
+---
+
+### 🛠️ Generate Services
+
+#### Purpose
+Automatically generate service files for business logic, derived from OpenAPI paths.
+
+#### How It Works
+- Dynamically integrate these services into Redux structures.
+- Facilitate seamless state management and business logic handling.
+
+#### Features
+- **Dynamic Redux Integration:**
+  - Auto-generate actions, reducers, and middleware.
+  - Tailored state management for each service.
+
+#### Benefits
+- Scalable business logic.
+- Streamlined Redux workflow.
+
+---
+
+### 📂 Generate APIs
+
+#### Purpose
+Auto-generate API clients based on OpenAPI specifications.
+
+#### Features
+- Typed API methods.
+- Built-in error handling.
+- Full compatibility with the OpenAPI spec.
+
+#### Benefits
+- Faster API integration.
+- Reliable and type-safe API calls.
+
+---
+
+### 🔄 Generate Type Mappings
+
+#### Purpose
+Map API schemas to strongly typed models, ensuring data consistency across your application.
+
+#### Features
+- Type-safe mappings for API responses and requests.
+- Streamlined handling of API data.
+
+#### Benefits
+- Improved developer experience.
+- Confidence in type-safe operations.
+
+---
+
+## 🚀 Stay Tuned
+
+We are constantly enhancing **SwagGen** with more features and improvements to empower developers. Keep an eye out for updates!
+
+---
 
 ## Development
 

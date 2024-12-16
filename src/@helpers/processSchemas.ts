@@ -1,5 +1,5 @@
-import { extractCategories, writeModelToFile } from "../@helpers";
 import path from "path";
+import { extractCategories, writeModelToFile } from "../@helpers";
 import { ensureDirectoryExists, resolveReferenceName } from "../@utils";
 import { OpenAPISchemas } from "swagger-client";
 import { determineCategory } from "./determineCategory";
@@ -27,7 +27,7 @@ export async function ProcessSchemas(
         beforeWrite?: (schemaName: string, filePath: string) => void;
         afterWrite?: (schemaName: string, filePath: string) => void;
         defaultCategory?: string;
-        defaultType?: string;
+        defaultFolder?: string;
         modelNameTransform?: { remove?: string[]; replace?: Record<string, string>; append?: string ,prepend?: string};
     }
 ): Promise<Record<string, string[]>> {
@@ -51,7 +51,7 @@ export async function ProcessSchemas(
             }
 
             const category = determineCategory(schemaName, knownCategories, options?.defaultCategory || "common");
-            const type = determineFolderName(schemaName, options?.defaultType || "model");
+            const type = determineFolderName(schemaName, options?.defaultFolder || "model");
             const categoryDir = path.resolve(basePath, category, type);
             const filePath = path.resolve(categoryDir, `${transformedSchemaName}.ts`);
 
